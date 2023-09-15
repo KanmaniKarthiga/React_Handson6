@@ -1,0 +1,227 @@
+.navbar{
+  height: 60px;
+  background-color: rgb(41, 41, 124);
+  display: flex;
+  justify-content: space-around;
+}
+.link{
+  color: white;
+  text-decoration: none;
+  padding-top: 6px;
+  font-size: 35px;
+  font-weight: bold;
+  font-family: 'Style Script', cursive;
+}
+.home, .contact{
+  font-size: 20px;
+  margin-top: 60px;
+  margin-left: 60px;
+}
+h1{
+  float: left;
+  margin-left: 50px;
+  margin-top: 30px;
+  font-size: 40px;
+}
+button{
+  float: right;
+  height: 50px;
+  width: 250px;
+  border-radius: 25px;
+  border: 1px solid black;
+  font-size: 22px;
+  background-color: rgb(215, 255, 241);
+  margin-right: 80px;
+  margin-top: 40px;
+  cursor: pointer;
+}
+table{
+  clear: both;
+  width: 90%;
+  height: auto;
+  margin-left: 70px;
+  border-collapse: collapse;
+}
+th, td{
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: white;
+  border-bottom: 1px solid rgb(187, 183, 183);
+  text-align: center;
+}
+.col1{
+  text-align: start;
+  padding-left: 30px;
+}
+.col2{
+  text-align: end;
+  padding-right: 10px;
+}
+.newform{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 130px;
+  margin-top: 60px;
+  margin-left: 120px;
+}
+.btn{
+  margin-top: -35px;
+  margin-left: 900px;
+}
+.btnCancel{
+  background-color: gray;
+  margin-top: -180px;
+  margin-left: 600px;
+}
+input{
+  outline: none;
+  height: 8vh;
+  width: 30vw;
+  border-radius: 10px;
+  font-size: 20px;
+  padding-left: 10px;
+  border: 1px solid gray;
+  background: transparent;
+  z-index: 1111;
+}
+input:valid,
+input:focus{
+  border: 1px solid rgb(116, 116, 247);
+}
+input:focus + span,
+input:valid + span{
+  transform: translate(20px, -26px) scale(0.88);
+  z-index: 1111;
+  font-size: 1.2em;
+  color: rgb(116, 116, 247);
+  
+}
+.inputBox .span1, .inputBox .span3{
+  position: absolute;
+  left: 7em;
+  margin-top: 10px;
+  pointer-events: none;
+  font-size: 20px;
+  background-color: rgb(172 192 195);
+  transition: 0.5s;
+}
+.inputBox .span2, .inputBox .span4{
+  position: absolute;
+  left: 35em;
+  margin-top: 10px;
+  pointer-events: none;
+  font-size: 20px;
+  transition: 0.5s;
+}
+
+
+
+
+@media (min-width: 300px) and (max-width: 400px){
+  .navbar{
+    justify-content: space-evenly;
+  }
+  .link{
+    margin-top: 10px;
+    font-size: 20px;
+  }
+  table{
+    margin-left: 20px;
+    overflow: hidden;
+  }
+  h1{
+    font-size: 20px;
+    margin-left: 30%;
+  }
+  button{
+    font-size: 15px;
+    height: 35px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    margin-right: 16%;
+  }
+  .col1{
+    padding-left: 2px;
+  }
+  .newform{
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0px;
+    gap: 10px;
+  }
+  #name, #age, #course, #batch{
+    width: 60vw;
+    font-size: 15px;
+  }
+  .btn{
+    margin-top: 0px;
+    margin-left: 195px;
+    width: 100px;
+  }
+  .btnCancel{
+    margin-top: -65px;
+    margin-left: -30px;
+    width: 100px;
+  }
+}
+@media (min-width: 400px) and (max-width: 700px){
+  table{
+    margin-left: 20px;
+    overflow: hidden;
+  }
+  button{
+    font-size: 15px;
+    height: 35px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    margin-right: 16%;
+  }
+  h1{
+    font-size: 25px;
+    margin-left: 30%;
+  }
+  .newform{
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0px;
+    gap: 10px;
+  }
+  #name, #age, #course, #batch{
+    width: 60vw;
+    font-size: 15px;
+  }
+  .btn{
+    margin-top: 10px;
+    margin-left: 195px;
+    width: 100px;
+  }
+  .btnCancel{
+    margin-top: -65px;
+    margin-left: -30px;
+    width: 100px;
+  }
+}
+@media (min-width: 700px) and (max-width: 1000px){
+  table{
+    margin-left: 40px;
+    overflow: hidden;
+  }
+  .btn{
+    margin-top: 10px;
+    margin-left: 370px;
+    
+  }
+  .btnCancel{
+    margin-top: -80px;
+    margin-left: 90px;
+  }
+  .newform{
+    margin-left: 50px;
+    gap: 30px;
+    
+  }
+  #name, #age, #course, #batch{
+    width: 40vw;
+  }
+}
+
